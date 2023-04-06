@@ -34,3 +34,6 @@ ssosync
 # Noise from os/editors
 .DS_Store
 *.swp
+
+# Secrets
+credentials

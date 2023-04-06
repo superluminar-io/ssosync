@@ -18,7 +18,6 @@ docker create --tty                                                  \
 	--env AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}                 \
 	--env AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}         \
 	--env AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}                 \
-	--env AWS_CREDENTIAL_EXPIRATION=${AWS_CREDENTIAL_EXPIRATION} \
 	"${id}"
 docker cp . ${id}:/ssosync
 docker start --interactive --attach "${id}"

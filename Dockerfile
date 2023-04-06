@@ -9,5 +9,3 @@ ENV SAM_CLI_TELEMETRY=0
 RUN apk add --no-cache bash docker git go
 
 WORKDIR /ssosync
-
-COPY build.sh .
