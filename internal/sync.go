@@ -374,7 +374,7 @@ func (s *syncGSuite) SyncGroupsUsers(query string) error {
 				return err
 			}
 		} else {
-			log.Error("Not deleting user from AWS users (use --delete to delete users and groups)")
+			log.Warn("--delete not specified, skipping user deletion")
 		}
 
 	}
@@ -539,7 +539,7 @@ func (s *syncGSuite) SyncGroupsUsers(query string) error {
 				return err
 			}
 		} else {
-			log.Error("Not deleting group from AWS groups (use --delete to delete users and groups)")
+			log.Warn("--delete not specified, skipping group deletion")
 		}
 	}
 
