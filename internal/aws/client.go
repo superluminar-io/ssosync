@@ -28,9 +28,9 @@ import (
 )
 
 var (
-	ErrUserNotFound      = errors.New("user not found")
-	ErrGroupNotFound     = errors.New("group not found")
-	ErrUserNotSpecified  = errors.New("user not specified")
+	ErrUserNotFound     = errors.New("user not found")
+	ErrGroupNotFound    = errors.New("group not found")
+	ErrUserNotSpecified = errors.New("user not specified")
 )
 
 type ErrHttpNotOK struct {

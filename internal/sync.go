@@ -110,7 +110,7 @@ func (s *syncGSuite) SyncUsers(query string) error {
 		}
 	}
 
-	log.Debug("get active google users")
+	log.WithField("query", query).Debug("get active google users")
 	googleUsers, err := s.google.GetUsers(query)
 	if err != nil {
 		return err
