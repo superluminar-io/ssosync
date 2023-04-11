@@ -181,6 +181,12 @@ Resources:
             Enabled: true
             Schedule: !Ref ScheduleExpression
 
+  SSOSyncLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${SSOSyncFunction}"
+      RetentionInDays: 30
+
   AWSGoogleCredentialsSecret:
     Type: "AWS::SecretsManager::Secret"
     Properties:
