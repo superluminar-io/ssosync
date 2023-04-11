@@ -36,4 +36,6 @@ ssosync
 *.swp
 
 # Secrets
-credentials
+cmd.sh
+credentials*
+samconfig.secret.toml
